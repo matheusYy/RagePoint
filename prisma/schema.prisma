@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Point {
+  name         String?
+  email        String   @unique
+  id           Int      @id @default(autoincrement())
+  data         DateTime @default(now())
+  initialPoint Int
+  lauch        Int
+  totalHours   Int
+  exitPoint    Int
+  notPoint     Boolean  @default(true)
+  missingHours Boolean  @default(false)
+  hoursLeft    Int
+}

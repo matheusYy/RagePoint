@@ -1,0 +1,38 @@
+
+
+.span-color-week {
+ color: rgb(0, 208, 255);
+}
+
+.flex {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ gap: 2em;
+ width: 30%;
+}
+.setaStyle, .setaStyle2 {
+ transition: all 0.1s ease-in-out;
+}
+.setaStyle {
+ fill: white;
+ transform: rotate(180deg);
+}
+.setaStyle2 {
+ fill: white;
+}
+.setaStyle:hover {
+ fill: #b2b2b2;
+}
+.setaStyle2:hover {
+ fill: #b2b2b2;
+}
+
+.mouth {
+ width: 5em;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+}

@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(3em, 1fr));
+  grid-template-rows: 5vh repeat(1, 1fr);
+  justify-items: center;
+  height: 85vh;
+  min-height: 340px;
+  max-height: 540px;
+  gap: 30px;
+}
+
+.calender {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(3em, 1fr));
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px;
+  text-align: center;
+  width: 99%;
+  grid-column: 1/8;
+  background-color: #dddddd;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  font-size: 0.9em;
+}
+
+.calender > span {
+  background-color: #ffffff;
+  padding-top: 10px;
+}
+
+.calenderDaysNull {
+  color: rgba(52, 52, 52, 0.368627451);
+}
+
+.calenderDaysNull:nth-child(1) {
+  border-radius: 10px 0 0 0;
+}
+
+.calenderDaysNull:nth-last-child(1) {
+  border-radius: 0 0 10px 0;
+}
+
+.calenderDays:nth-child(1) {
+  border-radius: 10px 0 0 0;
+}
+
+.calenderDays:nth-child(7) {
+  border-radius: 0 10px 0 0px;
+}
+
+.calenderDays:nth-child(29) {
+  border-radius: 0 0 0 10px;
+}
+
+.calenderDays {
+  color: rgb(10, 0, 34);
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.calenderDays > p[data-week=true] {
+  color: rgb(255, 255, 255);
+  width: fit-content;
+  border-radius: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.calenderDays > p[data-week=true] > span {
+  background-color: rgb(180, 126, 255);
+  padding: 5px;
+  border-radius: 99999px;
+}
+
+.calenderDays > p {
+  transition: all 0.6s ease;
+}
+
+.calenderDays > p:hover {
+  transition: all 0.6s ease;
+  background-color: rgb(233, 196, 196);
+}
+
+/*# sourceMappingURL=calender.module.css.map */

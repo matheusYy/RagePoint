@@ -1,0 +1,107 @@
+.content {
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  width: 53%;
+  height: 82%;
+  padding: 10px;
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4117647059);
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.content > form > label {
+  text-indent: 0;
+  font-size: smaller;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.content > form {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  width: 90%;
+}
+
+.button {
+  position: absolute;
+  transition: background-color 0.2s ease-in;
+  top: 95%;
+  left: 90%;
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4117647059);
+}
+
+.button > svg {
+  transition: all 50ms ease;
+  fill: white;
+}
+
+.button > svg[data-spin=true] {
+  transform: rotate(45deg);
+}
+
+.input {
+  background-color: rgb(255, 255, 255);
+  padding: 7px;
+  height: 2.5em;
+  border: 1px solid #7d7d7d;
+  border-radius: 10px;
+}
+
+.submit {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+.submit:disabled {
+  color: #797979;
+}
+
+.errMessage {
+  color: rgb(255, 75, 75);
+  padding: 1px;
+  border-radius: 10px;
+}
+
+.input:focus {
+  outline: 2px solid #3c3886;
+  border: 1px solid transparent;
+}
+
+.loader {
+  width: 15px;
+  height: 15px;
+  border: 5px dotted #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.module.css.map */
